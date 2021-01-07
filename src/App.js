@@ -1,10 +1,10 @@
 import React from "react";
-import { Routes } from "./Components/RouteConfig";
+import { RouterConfig } from "./Components/RouterConfig";
 
 function App() {
    return (
       <div>
-         <Routes />
+         <RouterConfig />
       </div>
    );
 }
