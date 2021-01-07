@@ -1,6 +1,7 @@
 import React from "react";
 import Shoe from "../Services/shoes.json";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 export const Products = () => {
    return (
@@ -10,10 +11,10 @@ export const Products = () => {
          {Object.keys(Shoe).map((value, index) => {
             const shoes = Shoe[value];
             return (
-               <div className="productContainer" key={index}>
+               <Link className="productContainer" key={index} to={`/products/${value}`}>
                   <h3>{shoes.name}</h3>
-                  <img src={shoes.src} alt="shoe_Product" />
-               </div>
+                  <img src={shoes.img} alt="shoe_Product" />
+               </Link>
             );
          })}
       </div>

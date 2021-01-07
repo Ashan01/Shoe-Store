@@ -17,7 +17,7 @@ export const RouterConfig = () => {
                <Route path="/about" component={About} />
                <Route path="/contact" component={ContactUs} />
                <Route exact path="/products" component={Products} />
-               <Route path="/products/:id*" component={ProductIteam} />
+               <Route path="/products/:id" component={ProductIteam} />
                <Route
                   path="*"
                   component={() => {
