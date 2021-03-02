@@ -1,0 +1,9 @@
+.mainDiv {
+   width: 50%;
+   float: right;
+   display: flex;
+   background-color: aqua;
+}
+.mainDiv h1 {
+   align-items: center;
+}
